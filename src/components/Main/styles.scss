@@ -1,0 +1,119 @@
+@import "../../styles/Colors";
+
+main {
+    width: min(980px, 100%);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    padding: 2rem 1rem;
+
+    .left {
+        width: min(396px, 100%);
+        text-align: center;
+
+        h1 {
+            font-size: 62px;
+            letter-spacing: -3px;
+            color: $blue;
+        }
+
+        p {
+            font-size: 22px;
+        }
+    }
+
+    .right {
+        width: min(396px, 100%);
+
+        form, input, button {
+            border-radius: 8px;
+        }
+
+        button, a {
+            cursor: pointer;
+        }
+
+        form {
+            background: #fff;
+            padding: 2rem 1rem;
+
+            display: flex;
+            flex-direction: column;
+            gap: .8rem;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.361);
+
+            input, button {
+                font-size: 18px;
+                padding: .8rem;
+            }
+
+            input {
+                border: 1px solid $grey;
+
+                &:focus {
+                    outline-color: $blue;
+                }
+            }
+
+            button {
+                border: 0;
+                font-weight: bold;
+                color: #fff;
+                opacity: 0.85;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            .blue {
+                background: $blue;
+            }
+
+            .green {
+                background: $green;
+                width: 163px;
+                margin: .5rem auto 0;
+            }
+
+            a {
+                color: $blue;
+                text-align: center;
+                margin: .5rem 0 1rem;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        p {
+            margin: 1rem .5rem;
+            text-align: center;
+
+            a {
+                font-weight: bold;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        flex-direction: row;
+
+        .left {
+            width: calc(100% - 396px);
+            text-align: left;
+        }
+    }
+
+}
