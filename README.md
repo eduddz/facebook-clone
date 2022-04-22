@@ -16,7 +16,7 @@ Desenvolvendo um clone da página inicial do Facebook com os métodos mais avan�
 
 ## Adicionando Biblioteca 📕
 
-    yarna add sass
+    yarn add sass
 
 ## Adicionando Fonte 🔠
 
